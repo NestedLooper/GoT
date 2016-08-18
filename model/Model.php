@@ -25,4 +25,14 @@ class Model
         return $characters[$name];
     }
 
+    public function getSorted()
+    {
+        $characters = $this->getAllCharacters();
+        // sort the array of objects by character name
+        uasort($characters, function ($a, $b) {
+            return strcmp($a->name, $b->name);
+        });
+        return $characters;
+    }
+
 }

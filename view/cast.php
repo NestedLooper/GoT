@@ -20,4 +20,10 @@ foreach ($characters as $name => $character) {
 ?>
 
 </div>
+<div class="col-md-12 text-center">
+<form action="index.php">
+    <input type="hidden" name="sort" value="true" />
+    <input type="submit" value="Sort By Name" />
+</form>
+</div>
 
